@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wissenschaftlicher Taschenrechner</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <p id="preview" class="prevBox">Vorschau:</p>
+      <input
+        type="text"
+        id="inputBox"
+        class="resBox"
+        placeholder="0"
+        readonly
+      />
+      <div class="panel">
+        <div class="basic">
+          <div class="part1">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>00</button>
+            <button>0</button>
+            <button>,</button>
+            <button class="operator">AC</button>
+            <button class="operator">DEL</button>
+            <button class="equalBtn">=</button>
+          </div>
+          <!-- Standard Funktionen -->
+          <div class="part2">
+            <!-- <button class="operator">%</button> -->
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+            <button class="operator">-</button>
+            <button class="operator">+</button>
+            <button id="toggleScientific" class="toggle-btn">on</button>
+          </div>
+        </div>
+
+        <!-- Wissenschaftliche Funktionen -->
+        <div id="scientificSection" class="part3" style="display: none">
+          <button class="scientific">sin</button>
+          <button class="scientific">cos</button>
+          <button class="scientific">tan</button>
+          <button class="scientific">√</button>
+          <button class="scientific">x²</button>
+          <button class="scientific">x^y</button>
+          <button>(</button>
+          <button>)</button>
+        </div>
+        <!-- Button zum Ein- und Ausblenden -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
